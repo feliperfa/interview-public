@@ -4,9 +4,9 @@ public class Account {
     private final AccountKey accountKey;
     private final String firstName;
     private final String lastName;
-    private Double balance;
+    private double balance;
 
-    public Account(AccountKey accountKey, String firstName, String lastName, Double balance) {
+    public Account(AccountKey accountKey, String firstName, String lastName, double balance) {
         this.accountKey = accountKey;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -25,11 +25,11 @@ public class Account {
         return lastName;
     }
 
-    public Double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(Double balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 }

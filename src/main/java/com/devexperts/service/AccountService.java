@@ -1,6 +1,7 @@
 package com.devexperts.service;
 
 import com.devexperts.account.Account;
+import com.devexperts.exception.InsuficientAmountException;
 
 public interface AccountService {
 
@@ -32,6 +33,7 @@ public interface AccountService {
      * @param source account to transfer money from
      * @param target account to transfer money to
      * @param amount dollar amount to transfer
+     * @throws InsuficientAmountException 
      * */
-    void transfer(Account source, Account target, double amount);
+    void transfer(Account source, Account target, double amount) throws InsuficientAmountException;
 }
